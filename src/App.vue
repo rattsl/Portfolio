@@ -80,3 +80,8 @@ export default {
   }),
 };
 </script>
+<style>
+.ul{
+    border-bottom: 10px solid red;
+}
+</style>
