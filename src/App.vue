@@ -26,14 +26,30 @@
       >
         <span class="mr-2">PROFILE</span>
       </v-btn>
-      <v-btn
-        text
-        href="#"
-        target="_blank"
-      >
-        <span class="mr-2">PORTFOLIO</span>
-        <!-- ここでポップアップでEXPERIENCEとWORKSとSKILLASETTSの3つをだす -->
-      </v-btn>
+      <v-menu transition="scroll-y-transition">
+        <template v-slot:activator="{ on }">
+        <v-btn text class="ma-2" v-on="on">
+          PORTFOLIO
+        </v-btn>
+      </template>
+      <v-list>
+        <v-list-item
+          link=""
+        >
+          <v-list-item-title>WORKS</v-list-item-title>
+        </v-list-item>
+        <v-list-item
+          link=""
+        >
+          <v-list-item-title>EXPERIENCE</v-list-item-title>
+        </v-list-item>
+        <v-list-item
+          link=""
+        >
+          <v-list-item-title>SKILL-ASSETS</v-list-item-title>
+        </v-list-item>
+      </v-list>
+      </v-menu> 
       <v-btn
         text
         href="#"
@@ -47,7 +63,9 @@
       <Top/>
       <About/>
       <Profile/>
-      <Portfolio/>
+      <Works/>
+      <Experience/>
+      <SA/>
       <contact/>
     </v-content>
     <v-footer class="indigo">
@@ -62,7 +80,9 @@
 import Top from '@/containers/Top.vue'
 import About from '@/containers/About.vue'
 import Profile from '@/containers/Profile.vue'
-import Portfolio from '@/containers/Portfolio.vue'
+import Works from '@/containers/Works.vue'
+import Experience from '@/containers/Experience.vue'
+import SA from '@/containers/SA.vue'
 import Contact from '@/containers/Contact.vue'
 
 
@@ -72,7 +92,9 @@ export default {
     Top,
     About,
     Profile,
-    Portfolio,
+    Works,
+    Experience,
+    SA,
     Contact,
   },
   data: () => ({
