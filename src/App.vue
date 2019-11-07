@@ -7,22 +7,19 @@
       <v-spacer></v-spacer>
       <v-btn
         text
-        href="#"
-        target="_blank"
+         @click="$vuetify.goTo('#top')"
       >
         <span class="mr-2">TOP</span>
       </v-btn>
       <v-btn
         text
-        href="#"
-        target="_blank"
+        @click="$vuetify.goTo('#about')"
       >
         <span class="mr-2">ABOUT</span>
       </v-btn>
       <v-btn
         text
-        href="#"
-        target="_blank"
+         @click="$vuetify.goTo('#profile')"
       >
         <span class="mr-2">PROFILE</span>
       </v-btn>
@@ -31,20 +28,20 @@
         <v-btn text class="ma-2" v-on="on">
           PORTFOLIO
         </v-btn>
-      </template>
-      <v-list>
+        </template>
+        <v-list>
         <v-list-item
-          link=""
+          @click="$vuetify.goTo('#works')"
         >
           <v-list-item-title>WORKS</v-list-item-title>
         </v-list-item>
         <v-list-item
-          link=""
+          @click="$vuetify.goTo('#experience')"
         >
           <v-list-item-title>EXPERIENCE</v-list-item-title>
         </v-list-item>
         <v-list-item
-          link=""
+          @click="$vuetify.goTo('#sa')"
         >
           <v-list-item-title>SKILL-ASSETS</v-list-item-title>
         </v-list-item>
@@ -52,21 +49,20 @@
       </v-menu> 
       <v-btn
         text
-        href="#"
-        target="_blank"
+        @click="$vuetify.goTo('#contact')"
       >
         <span class="mr-2">CONTACT</span>
       </v-btn>
     </v-app-bar>
 
     <v-content>
-      <Top/>
-      <About/>
-      <Profile/>
-      <Works/>
-      <Experience/>
-      <SA/>
-      <contact/>
+      <Top id="top"/>
+      <About id="about"/>
+      <Profile id="profile"/>
+      <Works id="works"/>
+      <Experience id="experience"/>
+      <SA id="sa"/>
+      <contact id="contact"/>
     </v-content>
     <v-footer class="indigo">
     <v-spacer></v-spacer>
