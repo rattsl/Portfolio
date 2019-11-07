@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span class="font-weight-light">PORTFOLIO</span>
+        <span class="font-weight-light text-lowercase">rattsl.com</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
