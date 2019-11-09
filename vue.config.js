@@ -5,6 +5,11 @@ module.exports = {
 
   publicPath: process.env.NODE_ENV === 'production'
     ? '/Portfolio/'
+<<<<<<< HEAD
     : '/',
     outputDir: 'docs',
 }
+=======
+    : '/'
+}
+>>>>>>> origin/master
