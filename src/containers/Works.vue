@@ -62,7 +62,7 @@
                 text
                 color="deep-purple accent-4"
             >
-                Show ditail
+                Show detail
             </v-btn>
             </v-card-actions>
           </v-row>
@@ -105,6 +105,12 @@ export default {
               name: 'Portfolio',
               language: 'Vue.js Vuetify',
               explain: 'hogehogehoge',
+          },
+          {
+              date: '2019年11月',
+              name: 'かっこいい垣内勇人',
+              language: 'Node.js',
+              explain: 'hogeeeeeeeeeeeeee',
           }
           ],
           model: null,

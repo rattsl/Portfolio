@@ -1,6 +1,6 @@
 <template>
   <v-app>
-      <v-container>
+      <v-container class="mb-10">
         <v-row
         align="center"
         justify="center"
